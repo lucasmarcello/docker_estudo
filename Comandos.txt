@@ -87,6 +87,8 @@ Docker compose
 docker-compose up
 docker-compose up -d
 docker-compose logs -f -t
+docker-compose up -d --scale worker=3
+docker-compose logs -f -t worker
 
 Executar script postgres
 docker-compose exec db psql -U postgres -c '\l'
